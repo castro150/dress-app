@@ -95,6 +95,14 @@ public class NavigationDrawerFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 selectItem(position);
+                switch (position) {
+                    case 0:
+                        break;
+                    case 1:
+                        break;
+                    case 2:
+                        break;
+                }
             }
         });
         mDrawerListView.setAdapter(new ArrayAdapter<String>(
@@ -200,7 +208,7 @@ public class NavigationDrawerFragment extends Fragment {
             mCallbacks.onNavigationDrawerItemSelected(position);
         }
         /*if (mCurrentSelectedPosition == 1) {
-            getActivity().setContentView(R.layout.fragment_teste);
+            getActivity().setContentView(R.layout.fragment_disponiveis);
         }*/
     }
 
